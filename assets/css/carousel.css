@@ -1,0 +1,79 @@
+#carousel3d {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#carousel3d .carousel-3d-container {
+	overflow: initial;
+}
+
+#carousel3d .carousel-3d-slide {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
+	transition: all 0.4s;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	background: transparent;
+	border: none;
+}
+
+#carousel3d .carousel-3d-slide.current {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	overflow: initial;
+}
+
+#carousel3d .carousel-3d-slide.current span {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+#carousel3d .carousel-3d-slide img {
+	background-size: cover;
+	height: 250px;
+	width: 250px;
+}
+
+#carousel3d .carousel-3d-slide.current .container_info {
+	display: block;
+}
+
+#carousel3d .carousel-3d-slide .container_info {
+	position: relative;
+	z-index: 1000;
+	bottom: -35px;
+	height: 100px;
+	width: 350px;
+	font-size: 20px;
+	font-weight: 400;
+	display: none;
+}
+
+#carousel3d .carousel-3d-slide .container_info .btn {
+	background: #ff304a;
+	width: 131px;
+	height: 31;
+	padding: 5px;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+
+#carousel3d .carousel-3d-slide .container_info .btn a {
+	color: #fff;
+}
+
+#carousel3d .carousel-3d-slide .container_info .btn:hover {
+	box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
